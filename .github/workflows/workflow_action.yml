@@ -3,12 +3,14 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    brancjes: [ "main" ]
+    branches: [ "main" ]
   workflow_dispatch:
+env: 
+  name: "sonu"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Run a one-line script
-      run: echo hello,workflow_dispatch
+      run: echo "my name is $name"
