@@ -1,1 +1,2 @@
 github action pertice
+set a workflow
